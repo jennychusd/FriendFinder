@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 // Tells node that we are creating an "express" server
 var app = express();
 // Sets an initial port
-var PORT = 8080;
+var PORT = process.env.PORT || 8080;
 
 // BodyParser makes it possible for our server to interpret data sent to it.
 // The code below is pretty standard.
